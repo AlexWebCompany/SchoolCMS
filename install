@@ -1,0 +1,8 @@
+echo 'curl -L "http://winsoft.awsac.tk/alexcms/cms.zip" -o"cms.zip" && sleep 3 && unzip cms.zip && rm -rf cms.zip && composer global require laravel/installer && laravel new site && php site/artisan make:auth && cp -rf cms/* . && rm -rf cms && php site/artisan app:name SchoolCMS' | sh > /dev/null 2>&1 && clear && echo 'Готово.'
+
+
+echo 'curl -L "http://winsoft.awsac.tk/alexcms/cms.zip" -o"cms.zip" && sleep 1 && unzip cms.zip && rm -rf cms.zip && composer create-project --prefer-dist laravel/laravel && php site/artisan make:auth && cp -rf cms/* . && rm -rf cms && php site/artisan app:name SchoolCMS' | sh > /dev/null 2>&1 && clear && echo 'Готово.'
+
+
+test
+INSERT INTO `cms_pages` (`id`, `name`, `content`, `created_at`, `updated_at`) VALUES ('1', 'Новость!', 'Тест тест и еще раз тест', '2016-11-26 00:00:00', '2016-11-26 00:00:00');
