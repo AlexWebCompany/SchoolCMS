@@ -67,7 +67,7 @@
                    @lang('main.name')
                 </div>
                 <div class="links">
-                    <a href="http://shop.awsac.tk">@lang('main.shop')</a>
+                    <a href="http://apps.awsac.tk">@lang('main.shop')</a>
                 </div>
             </div>
         </div>
