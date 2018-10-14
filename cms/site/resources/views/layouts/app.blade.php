@@ -12,7 +12,7 @@
 <?php if (!isset($isname)) {print_r('<title>' . trans('main.name') . '</title>'); } ?>
 
     <!-- @lang('main.styles') -->
-    <link href="/site/public/css/app.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- @lang('main.scripts') -->
     <script>
@@ -84,6 +84,7 @@
     </div>
 
     <!-- @lang('main.scripts') -->
-    <script src="/site/public/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
