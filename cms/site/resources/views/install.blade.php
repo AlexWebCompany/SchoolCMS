@@ -154,7 +154,7 @@ class Helper_TimeZone
 					<input type="text" placeholder="@lang('config.urlsite')" name="url_site" value="<?php print((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/"); ?>" class="form-control">
                     </div>
 					</div>
-					<?=Helper_TimeZone::getTimeZoneSelect(config('app.timezone'));?>
+					<?=Helper_TimeZone::getTimeZoneSelect(date_default_timezone_get());?>
 					<div class="form-group">
                     <label class="col-md-4 control-label">@lang('config.lang'): </label>
 					<div class="col-md-6">
