@@ -12,7 +12,7 @@
 <title>@lang('config.install') @lang('main.cmsname')</title>
 
     <!-- @lang('main.styles') -->
-    <link href="/site/public/css/app.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- @lang('main.scripts') -->
     <script>
