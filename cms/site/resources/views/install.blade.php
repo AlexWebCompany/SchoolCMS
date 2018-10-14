@@ -151,7 +151,7 @@ class Helper_TimeZone
                     <div class="form-group">
 					<label class="col-md-4 control-label">@lang('config.urlsite'): </label>
 					<div class="col-md-6">
-					<input type="text" placeholder="@lang('config.urlsite')" name="url_site" value="{{ config('app.url') }}" class="form-control">
+					<input type="text" placeholder="@lang('config.urlsite')" name="url_site" value="<?php print((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/"); ?>" class="form-control">
                     </div>
 					</div>
 					<?=Helper_TimeZone::getTimeZoneSelect(config('app.timezone'));?>
